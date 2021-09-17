@@ -5,23 +5,12 @@ const cleanCSS     = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename       = require("gulp-rename");
 const imagemin     = require('gulp-imagemin');
-<<<<<<< HEAD
-<<<<<<< HEAD
 const newer        = require('gulp-newer');
 const del          = require('del');
 const fileinclude  = require('gulp-file-include');
 const webpack      = require('webpack');
 const webpackStream = require('webpack-stream');
 const sourcemaps = require('gulp-sourcemaps');
-
-=======
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
-const concat       = require('gulp-concat');
-const uglify       = require('gulp-uglify');
-const newer        = require('gulp-newer');
-const del          = require('del');
-const fileinclude  = require('gulp-file-include');
 <<<<<<< HEAD
 >>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
 =======
@@ -37,24 +26,12 @@ function browsersync () {
 
 function style () {
     return src('src/sass/**/*.+(scss|sass)')
-<<<<<<< HEAD
-<<<<<<< HEAD
         .pipe(sourcemaps.init())
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true}))
         .pipe(cleanCSS({compatibility: 'ie8'}))
-<<<<<<< HEAD
-<<<<<<< HEAD
         .pipe(sourcemaps.write())
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
         .pipe(dest("dist/css"))
         .pipe(browserSync.stream())
 }
@@ -70,17 +47,7 @@ function html () {
 
 function scripts () {
     return src('src/JS/**/*.js')
-<<<<<<< HEAD
-<<<<<<< HEAD
     .pipe(webpackStream(require('./webpack.config.js')))
-=======
-    .pipe(concat('all.min.js'))
-    .pipe(uglify())
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
-=======
-    .pipe(concat('all.min.js'))
-    .pipe(uglify())
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
     .pipe(dest('dist/JS/'))
 }
 
