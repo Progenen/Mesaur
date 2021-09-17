@@ -1,0 +1,52 @@
+@function str-replace($string, $search, $replace: "") {
+
+    $index: str-index($string, $search);
+  
+    @if $index {
+      @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+  
+    @return $string;
+  }
+  
+  @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+  
+    $extmods: (
+      eot: "?",
+      svg: "#" + str-replace($name, " ", "_")
+    );
+  
+    $formats: (
+      otf: "opentype",
+      ttf: "truetype"
+    );
+  
+    @each $ext in $exts {
+      $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+      $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+      $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+  
+    @font-face {
+      font-family: quote($name);
+      font-weight: $weight;
+      font-style: $style;
+  
+      // font-display: block;
+      src: $src;
+    }
+}
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+@include font-face('Montserrat', '../fonts/Montserrat-Bold', bold, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat-Regular', 400, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat-Medium', 500, normal, ttf);
+=======
+@include font-face('Montserrat', '/app/fonts/Montserrat/Montserrat-Bold', bold, normal, woff2 woff ttf eot svg);
+>>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
+=======
+@include font-face('Montserrat', '/app/fonts/Montserrat/Montserrat-Bold', bold, normal, woff2 woff ttf eot svg);
+>>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
