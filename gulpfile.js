@@ -11,10 +11,6 @@ const fileinclude  = require('gulp-file-include');
 const webpack      = require('webpack');
 const webpackStream = require('webpack-stream');
 const sourcemaps = require('gulp-sourcemaps');
-<<<<<<< HEAD
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
-=======
->>>>>>> 936e16a9799e032845c249f14496e1ed79e63b4d
 
 function browsersync () {
     browserSync.init({

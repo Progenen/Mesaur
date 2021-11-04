@@ -1,8 +1,13 @@
 // Libs
-@import "libs/bootstrap-grid";
 
 // Main
 @import "support";
 @import "all";
 @import "script-classes";
+
+// Parts
+@import "header";
+
+// Home Page
+@import "home-page/offer";
 
