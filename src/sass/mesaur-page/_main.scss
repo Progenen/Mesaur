@@ -1,0 +1,38 @@
+.mesaur-page__side {
+    flex: 0 1 27%;
+    margin-right: 20px;
+}
+
+.mesaur-page__main {
+    flex: 0 1 72%;
+    max-width: 720px;
+}
+
+.mesaur-page__main-text {
+    margin-bottom: 56px;
+    width: 100%;
+    p {
+        font-size: 24px;
+        text-indent: .5em;
+        margin: 0;
+    }
+    &_no-indient p {
+        text-indent: 0;
+    }
+}
+
+@media (max-width:888px){
+    .mesaur-page__side {
+        margin: auto;
+        max-width: 600px;
+    }
+    .mesaur-page__main {
+        max-width: none;
+    }
+
+    .mesaur-page__main-text {
+        p {
+            font-size: 18px;
+        }
+    }
+}

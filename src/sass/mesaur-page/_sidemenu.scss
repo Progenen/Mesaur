@@ -1,0 +1,46 @@
+.mesaur-page {
+
+    &__sidemenu {
+    }
+
+    &__sidemenu-item {
+        border-top: 1px solid #000;
+        padding: 8px 0 13px 13px;
+        position: relative;
+        &.active {
+            a {
+                color: #ff0000;
+            }
+        }
+        &::after {
+            content: "»";
+            position: absolute;
+            right: 0;
+        }
+        &:last-child {
+            border-bottom: 1px solid #000;
+        }
+    }
+
+    &__sidemenu-link {
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    &__sidemenu-title {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #fa8f4f;
+        padding: 13px 0 7px;
+        font-size: 18px;
+        position: relative;
+        line-height: 27px;
+    }
+
+    &__sidemenu-list {
+        padding: 0;
+        margin: 3px 0 0 0;
+        list-style: none;
+    }
+}

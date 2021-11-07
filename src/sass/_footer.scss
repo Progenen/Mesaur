@@ -1,0 +1,254 @@
+.footer {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    &__top {
+        display: flex;
+        align-items: center;
+        margin-left: 93px;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__column {
+
+        &_big {
+            flex: 0 1 70.77%;
+            display: flex;
+            align-items: center;
+        }
+
+        &_sm {
+        }
+    }
+
+    &__menu {
+    }
+
+    &__menu-list {
+    }
+
+    &__menu-item {
+    }
+
+    &__menu-link {
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 0 33px 0 0;
+    }
+
+    &__logo-img {
+    }
+
+    &__title {
+    }
+
+    &__contacts {
+    }
+
+    &__contacts-phone {
+    }
+
+    &__copyright-text {
+        text-align: center;
+    }
+
+    &__copyright {
+        color: #fff;
+        order: 3;
+        padding: 5px 0;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 100%;
+            right: -50%;
+            z-index: -1;
+            bottom: 0;
+            background-color: #000;
+            
+        }
+    }
+
+}
+.social {
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        &_1 {
+            justify-content: flex-end;
+        }
+    }
+
+    &__list-item {
+        margin: 0 15px 0 0;
+        &:last-child {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__list-link {
+    }
+}
+
+@media (max-width:928px){
+    .footer {
+
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__top {
+            margin-left: 0;
+            order: 1;
+            margin-top: 20px;
+            flex-direction: column;
+            justify-content: center;
+            .footer__column {
+                &_big {
+                    width: 100%;
+                    justify-content: center;
+                }
+
+                &_sm {
+                    width: 100%;
+                    margin: auto;
+                    justify-content: center;
+                }
+            }
+        }
+        
+        &__bottom {
+            order: 0;
+        }
+
+        
+        &__menu-list {
+            display: block;
+            columns: 3;
+        }
+
+        .social__list_1 {
+            justify-content: center;
+        }
+
+        &__menu-item {
+            margin: 20px 0 0 0;
+            border: none;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+        &__menu-link {
+        }
+    }
+
+    &__menu-col {
+        flex: 0 20%;
+    }
+}
+
+@media (max-width:846px){
+    .footer {
+        &__menu-col {
+            order: 0;
+            width: initial;
+            flex: 0 1 30%;
+        }
+
+        &__menu-item {
+            margin: 10px 0 0 0;
+        }
+
+        &__menu-link {
+            font-size: 16px;
+            margin: 0 0 0 0;
+            padding: 5px;
+            font-weight: normal;
+        }
+    }
+}
+
+@media (max-width:700px){
+    .footer {
+        &__column_big {
+            flex: 0 1 40%;
+        }
+        &__column {
+            flex: 0 1 50%;
+        }
+
+        &__contacts {
+            margin: 0 0 0 auto;
+            max-width: 200px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .footer {
+        &__contacts-phone {
+            font-size: 14px;
+        }
+        &__contacts-mail {
+            margin: 0 0 0 0;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width:500px){
+    .footer {
+        &__top {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width:418px){
+    .footer {
+        &__bottom {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__column {
+            width: 100%;
+        }
+
+        &__column_big {
+            width: 100%;
+        }
+
+        &__contacts {
+            margin: 20px auto 0 20px;
+            text-align: left;
+        }
+        &__contacts-mail {
+            text-align: left;
+        }
+    }
+}
+@media (max-width:346px){
+    .footer {
+        &__menu-list {
+            columns: 2;
+        }
+    }
+}

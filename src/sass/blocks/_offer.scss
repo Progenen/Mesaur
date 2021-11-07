@@ -1,0 +1,103 @@
+.offer {
+    padding-top: 164px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__titles {
+        text-shadow: 0 0 25px rgba(255, 255, 255, 0.76);
+        max-width: 479px;
+        text-align: center;
+        margin: 0 auto 237px auto;
+    }
+
+    &__row {
+    }
+
+    &__title-sub {
+        font-size: 24px;
+        margin: 0;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.76), 0 0 20px rgba(255, 255, 255, 0.76),
+            0 0 20px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.76), 0 0 20px rgba(255, 255, 255, 0.76),
+            2px 0 20px rgba(255, 255, 255, 0.76), 2px 0 20px rgba(255, 255, 255, 0.76);
+    }
+
+    &__title-main {
+        font-size: 48px;
+        margin: 15px 0 0 0;
+        font-weight: 700;
+        text-shadow: 2px 0 20px rgba(255, 255, 255, 0.76), 2px 0 20px rgba(255, 255, 255, 0.76),
+            2px 0 20px rgba(255, 255, 255, 0.76), 2px 0 20px rgba(255, 255, 255, 0.76),
+            2px 0 20px rgba(255, 255, 255, 0.76), 2px 0 20px rgba(255, 255, 255, 0.76),
+            2px 0 20px rgba(255, 255, 255, 0.76);
+    }
+
+    &__info {
+        font-style: italic;
+        text-align: center;
+        display: block;
+        p {
+            font-size: 27px;
+            letter-spacing: normal;
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+        }
+        b {
+            font-size: 36px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .offer {
+        &__titles {
+            text-align: center;
+            margin: 0 auto 200px auto;
+        }
+
+        &__title-main {
+            font-size: 36px;
+        }
+
+        &__title-sub {
+            font-size: 20px;
+        }
+
+        &__info {
+            p {
+                font-size: 22px;
+            }
+            b {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 522px) {
+    .offer {
+        padding-top: 120px;
+
+        &__titles {
+            margin: 0 auto 180px auto;
+        }
+
+        &__title-main {
+            font-size: 28px;
+        }
+
+        &__title-sub {
+            font-size: 16px;
+        }
+
+        &__info {
+            p {
+                font-size: 18px;
+            }
+            b {
+                font-size: 22px;
+            }
+        }
+    }
+}

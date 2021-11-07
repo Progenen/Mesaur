@@ -1,0 +1,23 @@
+.mesaur-page-main-section_1 {
+    padding: 24px 0 0 0;
+}
+.mesaur-page-main-section {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__container {
+        max-width: 1138px !important;
+    }
+}
+@media (max-width:888px){
+    .mesaur-page-main-section {
+        &__row {
+            flex-direction: column;
+        }
+    }
+}
+.mesaur-page-main-section_2 {
+    background-image: url('../../images/graphics/mesaur/section-main_bg.webp');
+    background-position: center 70%;
+}

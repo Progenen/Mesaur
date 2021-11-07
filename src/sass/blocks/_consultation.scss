@@ -1,0 +1,86 @@
+.home-consultation {
+
+    &__title {
+    }
+
+    &__form {
+    }
+
+    &__form-input {
+    }
+
+    &__form-btn {
+    }
+}
+.consultation {
+    padding: 15px 0;
+    background-color: #9dd298;
+    &__container {
+        max-width: 1037px;
+    }
+
+    &__title {
+    }
+
+    &__form {
+        margin: 52px 0 0 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__form-input {
+        width: 100%;
+        padding: 15px 5px 9px 5px;
+        font-size: 18px;
+        border: none;
+        &::placeholder {
+            color: #636363;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+    }
+
+    &__form-btn {
+        background-color: #ff0000;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 13px 45px 9px 45px;
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0 5px;
+        width: 100%;
+    }
+
+    &__agreement {
+        margin: 29px 0 0 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:722px){
+    .consultation {
+        &__form {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__form-input {
+            margin: 10px auto;
+            justify-content: center;
+        }
+
+        &__form-btn {
+            justify-content: center;
+            margin: 10px auto 0 auto;
+            width: 100%;
+            max-width: 320px;
+        }
+    }
+}

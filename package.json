@@ -5,13 +5,19 @@
   "main": "index.js",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@fancyapps/ui": "^4.0.8",
     "core-js": "^3.17.2",
     "es6-promise": "^4.2.8",
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
-    "nodelist-foreach-polyfill": "^1.2.0"
+    "inputmask": "^5.0.6",
+    "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3",
+    "nodelist-foreach-polyfill": "^1.2.0",
+    "slick-carousel": "^1.8.1",
+    "upgrade": "^1.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",

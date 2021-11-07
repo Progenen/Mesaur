@@ -1,0 +1,47 @@
+.gallery-page {
+    &__row {
+    }
+
+    &__title {
+    }
+
+    &__container {
+        max-width: 1110px !important;
+    }
+
+    &__section {
+        padding: 12px 0 49px 0;
+    }
+
+    &__pages-list {
+        margin: 57px 0 0 0;
+    }
+}
+.breadcrumbs {
+    &__item {
+    }
+
+    &__link {
+    }
+}
+.main-title {
+    &_1 {
+    }
+}
+.gallery-page-gallery {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 56px 0 0 0;
+    }
+    &__item {
+        flex: 0 1 33.33%;
+        max-height: 344px;
+        padding: 7px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

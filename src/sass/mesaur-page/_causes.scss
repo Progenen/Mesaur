@@ -1,0 +1,45 @@
+.causes-mesaur-page {
+    margin-left: auto;
+    margin-bottom: 48px;
+    &__row {
+        justify-content: flex-end;
+    }
+
+    &__title {
+    }
+
+    &__items {
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 1 33.333%;
+        padding: 0 5px;
+    }
+
+    &__item-inner {
+    }
+
+    &__item-img {
+    }
+
+    &__item-title {
+    }
+}
+
+@media (max-width:888px){
+    .causes-mesaur-page {
+        &__items {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+@media (max-width:508px){
+    .causes-mesaur-page {
+        &__items {
+            flex-wrap: wrap;
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+    list-style: none;
+    margin: 0 0 34px 0;
+    padding: 0;
+    &__item {
+        border-right: 1px solid #000;
+        padding-right: 14px;
+        margin-right: 14px;
+        &:last-child {
+            border: none;
+            padding-right: 0;
+            margin-right: 0;
+            .breadcrumbs__link {
+                text-decoration: none;
+                color: #000;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__link {
+        font-size: 17px;
+    }
+}

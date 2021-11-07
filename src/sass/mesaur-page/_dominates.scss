@@ -1,0 +1,43 @@
+.mesaur-page {
+
+    &__dominates-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+    }
+
+    &__dominates-item {
+        min-height: 40px;
+        background-image: url('../../images/icons/list-icon.webp');
+        background-size: 40px 38px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding: 0 0 0 51px;
+        margin: 35px 0 0 0;
+        &:first-child {
+            margin: 0 0 0 0;
+        }
+    }
+
+    &__dominates-link {
+        font-size: 24px;
+        color: #000;
+        text-decoration: none;
+    }
+
+    &__dominates {
+    }
+
+    &__dominates-title {
+        font-weight: 700;
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width:888px){
+    .mesaur-page__dominates {
+        &-link {
+            font-size: 18px;
+        }
+    }
+}

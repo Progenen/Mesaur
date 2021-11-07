@@ -1,13 +1,57 @@
 // Libs
+@import "../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox.css";
 
 // Main
 @import "support";
 @import "all";
 @import "script-classes";
 
-// Parts
+// Blocks
+@import "blocks/burger";
+@import "blocks/offer";
+@import "blocks/about";
+@import "blocks/causes";
+@import "blocks/consultation";
+@import "blocks/review";
+@import "blocks/breadcrumbs";
+@import "blocks/form2";
 @import "header";
+@import "footer";
 
 // Home Page
 @import "home-page/offer";
+@import "home-page/about";
+@import "home-page/causes";
+@import "home-page/main-section";
+@import "home-page/does";
 
+// About page
+@import "about-page/page";
+@import "about-page/study";
+@import "about-page/main-section";
+@import "about-page/offer";
+
+// Mesaur page
+@import "mesaur-page/offer";
+@import "mesaur-page/section-main";
+@import "mesaur-page/main";
+@import "mesaur-page/side";
+@import "mesaur-page/sidemenu";
+@import "mesaur-page/announcement";
+@import "mesaur-page/causes";
+@import "mesaur-page/dominates";
+
+// Contacts Page
+@import "contacts-page/contacts";
+@import "contacts-page/main";
+
+// News Page
+@import "news-page/offer";
+@import "news-page/main";
+
+// Reviews Page
+@import "reviews-page/reviews";
+
+// Gallery Page
+@import "gallery-page/main";

@@ -1,0 +1,18 @@
+.about-page-offer {
+    padding-bottom: 287px;
+    &__titles {
+        margin-top: 73px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+@media (max-width:1200px){
+    .about-page-offer {
+        padding-bottom: 170px;
+        &__titles {
+            margin: 0 0 0 0;
+        }
+    }
+}
